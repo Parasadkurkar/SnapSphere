@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://snapsphere-xiq0.onrender.com/api';
 
 // Setup axios defaults
 axios.defaults.baseURL = API_URL;
@@ -25,7 +25,7 @@ export const updateProfile = async (data) => {
   try {
     const token = localStorage.getItem('token');
     const response = await axios.put(
-      'http://localhost:5000/api/users/update',
+      'https://snapsphere-xiq0.onrender.comapi/users/update',
       data,
       {
         headers: {
