@@ -1,4 +1,4 @@
-A full-featured social media platform combining the best of Instagram with modern web technologies.
+📸 A full-featured social media platform combining the best of Instagram with modern web technologies.
 
 Node.js Version
 React
@@ -119,7 +119,8 @@ Installation
 bash
 git clone https://github.com/Parasadkurkar/SnapSphere.git
 cd SnapSphere
-2. Backend Setup
+
+3. Backend Setup
 bash
 cd backend
 npm install
@@ -141,59 +142,13 @@ cp .env.example .env
 npm start
 Frontend will run on: http://localhost:3000
 
-📋 Project Structure
-text
-SnapSphere/
-├── backend/
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Post.js
-│   │   ├── Message.js
-│   │   ├── Conversation.js
-│   │   └── Notification.js
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── users.js
-│   │   ├── posts.js
-│   │   ├── messages.js
-│   │   ├── notifications.js
-│   │   └── editProfile.js
-│   ├── middleware/
-│   │   └── auth.js
-│   ├── server.js
-│   ├── package.json
-│   └── .env.example
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── pages/
-│   │   │   ├── Home.js
-│   │   │   ├── Login.js
-│   │   │   ├── Register.js
-│   │   │   ├── Profile.js
-│   │   │   ├── EditProfile.js
-│   │   │   ├── Messages.js
-│   │   │   ├── Notifications.js
-│   │   │   ├── Search.js
-│   │   │   └── CreatePost.js
-│   │   ├── layouts/
-│   │   │   └── MainLayout.js
-│   │   ├── services/
-│   │   │   └── api.js
-│   │   ├── App.js
-│   │   └── index.js
-│   ├── package.json
-│   └── .env.example
-│
-└── README.md
-🔑 Environment Variables
 Backend (.env)
 text
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/snapsphere
 JWT_SECRET=your_super_secret_key_change_in_production
 PORT=10000
 NODE_ENV=production
+
 Frontend (.env)
 text
 REACT_APP_API_URL=https://your-backend-url.onrender.com
@@ -232,72 +187,6 @@ PUT    /api/notifications/:id/read - Mark as read
 
 🌐 Live Demo
 Frontend: https://snapsphere1.netlify.app/
-
-Backend: API on Render
-
-💾 Database Schema
-User
-name - Full name
-
-username - Unique username
-
-email - Unique email
-
-password - Hashed password
-
-bio - User bio
-
-profilePic - Profile picture URL
-
-followers - Array of follower user IDs
-
-following - Array of following user IDs
-
-Post
-user - Reference to User
-
-caption - Post caption
-
-image - Image URL
-
-likes - Array of user IDs who liked
-
-comments - Array of comment objects
-
-createdAt - Timestamp
-
-Message
-conversation - Reference to Conversation
-
-sender - Reference to User
-
-text - Message text
-
-read - Boolean flag
-
-createdAt - Timestamp
-
-Conversation
-sender - Reference to User
-
-receiver - Reference to User
-
-lastMessage - Reference to Message
-
-updatedAt - Timestamp
-
-Notification
-recipient - Reference to User
-
-sender - Reference to User
-
-type - 'follow', 'like', or 'comment'
-
-post - Reference to Post (if applicable)
-
-read - Boolean flag
-
-createdAt - Timestamp
 
 🔐 Authentication
 JWT tokens stored in localStorage
