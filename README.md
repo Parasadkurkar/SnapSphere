@@ -1,86 +1,90 @@
 📸 A full-featured social media platform combining the best of Instagram with modern web technologies.
 
-Node.js Version
-React
-MongoDB
-License: MIT
-
 🌟 Features
-📸 Photo Sharing
+
+ # 📸 Photo Sharing
 Upload and share moments with your community
 
 Beautiful image display with captions
 
 Create posts instantly
 
-👥 Follow System
-Follow friends and see their updates in real-time
+ # 👥 Follow System
 
-Mutual followers detection
+-Follow friends and see their updates in real-time
 
-Unfollow with one click
+-Mutual followers detection
 
-❤️ Social Interactions
-Like posts from your favorite creators
+-Unfollow with one click
 
-Comment on posts and engage in conversations
+ # ❤️ Social Interactions
 
-Real-time like and comment counts
+-Like posts from your favorite creators
 
-💬 Direct Messaging
-Send private messages to friends
+-Comment on posts and engage in conversations
 
-Real-time message badges
+-Real-time like and comment counts
 
-Per-conversation unread count tracking
+ # 💬 Direct Messaging
+-Send private messages to friends
 
-Auto-mark messages as read
+-Real-time message badges
 
-🔔 Notifications
-Get notified about follows
+-Per-conversation unread count tracking
 
-Follow back notifications
+-Auto-mark messages as read
 
-Like and comment notifications
+# 🔔 Notifications
+-Get notified about follows
 
-Real-time notification badges
+-Follow back notifications
 
-👤 User Profiles
-Customize your profile with bio
+-Like and comment notifications
 
-Update profile picture
+-Real-time notification badges
 
-View follower/following lists
+# 👤 User Profiles
 
-User statistics
+-Customize your profile with bio
 
-🔍 Search Functionality
-Find and connect with other users
+-Update profile picture
 
-Search by username or name
+-View follower/following lists
 
-Instant search results
+-User statistics
 
-🔐 Security
-JWT-based authentication
+# 🔍 Search Functionality
 
-Password hashing with bcryptjs
+-Find and connect with other users
 
-Secure token management
+-Search by username or name
 
-Protected API endpoints
+-Instant search results
 
-📱 Responsive Design
-Mobile-friendly interface
+# 🔐 Security
 
-Works perfectly on all devices
+-JWT-based authentication
 
-Material-UI components
+-Password hashing with bcryptjs
 
-Smooth animations
+-Secure token management
 
-🛠️ Tech Stack
-Frontend
+-Protected API endpoints
+
+# 📱 Responsive Design
+
+-Mobile-friendly interface
+
+-Works perfectly on all devices
+
+-Material-UI components
+
+-Smooth animations
+
+# 🛠️ Tech Stack
+
+# Frontend
+
 React.js - UI library
 
 React Router - Navigation
@@ -91,7 +95,8 @@ Axios - HTTP client
 
 Local Storage - Auth persistence
 
-Backend
+# Backend
+
 Node.js - Runtime
 
 Express.js - Web framework
@@ -104,7 +109,8 @@ JWT - Authentication
 
 bcryptjs - Password security
 
-🚀 Quick Start
+# 🚀 Quick Start
+
 Prerequisites
 Node.js (v14 or higher)
 
@@ -114,92 +120,93 @@ npm or yarn
 
 Git
 
-Installation
+# Installation
+
 1. Clone Repository
-bash
+   
 git clone https://github.com/Parasadkurkar/SnapSphere.git
 cd SnapSphere
 
 3. Backend Setup
-bash
+
 cd backend
 npm install
+
 cp .env.example .env
-# Edit .env with your values:
-# MONGODB_URI=your_mongodb_connection_string
-# JWT_SECRET=your_secret_key
-# PORT=10000
+
+ Edit .env with your values:
+ MONGODB_URI=your_mongodb_connection_string
+ JWT_SECRET=your_secret_key
+ PORT=10000
+
 npm start
 Backend will run on: http://localhost:10000
 
 3. Frontend Setup
-bash
+
 cd frontend
+
 npm install
+
 cp .env.example .env
-# Edit .env:
-# REACT_APP_API_URL=http://localhost:10000
+Edit .env:
+
+ REACT_APP_API_URL=http://localhost:10000
+
 npm start
+
 Frontend will run on: http://localhost:3000
 
-Backend (.env)
-text
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/snapsphere
-JWT_SECRET=your_super_secret_key_change_in_production
-PORT=10000
-NODE_ENV=production
-
-Frontend (.env)
-text
-REACT_APP_API_URL=https://your-backend-url.onrender.com
-
 📚 API Endpoints
+
 Authentication
+
 text
 POST   /api/auth/register        - Register new user
+
 POST   /api/auth/login           - Login user
 
 Users
-text
+
 GET    /api/users/:userId        - Get user profile
+
 PUT    /api/users/:userId/follow - Follow/Unfollow user
+
 GET    /api/users/search/:query  - Search users
+
 PUT    /api/users/update         - Update profile
 
 Posts
-text
+
 GET    /api/posts                - Get feed (posts from followed users)
+
 POST   /api/posts                - Create post
+
 PUT    /api/posts/:postId/like   - Like/Unlike post
+
 POST   /api/posts/:postId/comment - Add comment
+
 DELETE /api/posts/:postId        - Delete post
 
 Messages
-text
+
 GET    /api/messages             - Get conversations
+
 GET    /api/messages/:userId     - Get conversation with user
+
 POST   /api/messages             - Send message
 
 Notifications
-text
+
 GET    /api/notifications        - Get notifications
+
 PUT    /api/notifications/:id/read - Mark as read
 
 🌐 Live Demo
 Frontend: https://snapsphere1.netlify.app/
 
-🔐 Authentication
-JWT tokens stored in localStorage
 
-Tokens sent with every API request in Authorization header
-
-Tokens expire and require re-login
-
-Password hashed with bcryptjs
-
-Protected routes require valid token
-
-🎨 UI/UX Features
+# 🎨 UI/UX Features
 Clean and intuitive interface
 
 Material-UI components
@@ -217,8 +224,10 @@ Real-time badge updates
 Image preview on upload
 
 
-📖 Usage Guide
+# 📖 Usage Guide
+
 Register & Login
+
 Go to the app
 
 Click "Sign Up" to create account
@@ -259,7 +268,7 @@ See all notifications
 
 Click to view details
 
-👨‍💻 Author
+# 👨‍💻 Author
 Paras adKurkar
 
 GitHub: @Parasadkurkar
